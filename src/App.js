@@ -1,20 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import Footer from "../src/components/Footer";
+import Header from "../src/components/Header";
+import NavBar from "../src/components/NavBar";
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <nav>
-        <h1>Now sofware is interesting</h1>
-        <li>Training</li>
-        <li>Services</li>
-        <li>Training</li>
-        <main>
-          <p>Its a pride learning software</p>
-        </main>
-      </nav>
-    </div>
+    <React.Fragment>
+      <Header />
+      <NavBar />
+      <Footer />
+    </React.Fragment>
   );
 }
 
