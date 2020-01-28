@@ -4,7 +4,7 @@ export class NavBar extends Component {
     render() {
         return (
           <div>
-            <nav>
+            <nav className="navbar">
               <h1>Now sofware is interesting</h1>
               <li>Training</li>
               <li>Services</li>
