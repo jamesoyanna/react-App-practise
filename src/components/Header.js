@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Header = () => {
+  const date = new Date()
     return (
       <div>
-        <header>The subtle Act of working Hard</header>
+       <h1>It is currently about {date.getHours() % 12} o'clock</h1>
       </div>
     );
 }
