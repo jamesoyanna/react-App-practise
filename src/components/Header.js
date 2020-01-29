@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
       <div>
-       <h1>Good {timeOfDay}</h1>
+       <h1 style={{color: "#ff8c00", backgroundColor:"green"}}>Good {timeOfDay}</h1>
       </div>
     );
 }
