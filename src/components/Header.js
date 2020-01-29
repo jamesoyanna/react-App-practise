@@ -14,10 +14,14 @@ const Header = () => {
           timeOfDay = "Night"
       }
   }
-
+const styles = { 
+    fontSize: "32px",
+    color: "blue",
+  backgroundColor: "orange" };
     return (
       <div>
-       <h1 style={{color: "#ff8c00", backgroundColor:"green"}}>Good {timeOfDay}</h1>
+       
+       <h2 style={styles}>Ladies and gentlemen this is the day we have been waiting for</h2>
       </div>
     );
 }
