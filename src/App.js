@@ -3,13 +3,16 @@ import React from 'react';
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import NavBar from "../src/components/NavBar";
+import TodoItem from "../src/components/TodoItem"
+
 import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <NavBar  />
+      <TodoItem />
+      <NavBar />
       <Footer />
     </div>
   );
