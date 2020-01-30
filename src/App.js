@@ -1,35 +1,15 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import Footer from "../src/components/Footer";
-//import Header from "../src/components/Header";
-//import NavBar from "../src/components/NavBar";
-//import TodoItem from "../src/components/TodoItem"
-import ContactCards from "../src/components/ContactCards";
+import Joke from "../src/components/Joke.js"; 
+import "./App.css";
 
-import './App.css';
-
-function App() {
-  
+const App = () => {
   return (
-    <div className="contacts">
-      <ContactCards
-        contact={{
-          name: "Felica",
-          email: "met@gmail.com",
-          phone: "08069254939",
-          imgUrl: "https://bit.ly/2GAX1JY",
-          alt: "new"
-        }}
-      />
-      <ContactCards
-        contact={{
-          name: "Agatha Menda",
-          email: "agta@yahoo.com",
-          phone: "05969254939",
-          imgUrl: "https://bit.ly/2GAX1JY",
-          alt: "new"
-        }}
-      />
+    <div>
+      <Joke question="What is the website of Nscdc ?" punchline="The website is www,ncsdc.org" />
+      <Joke question="What is PH" punchline="Its is negative log to base 10" />
+      <Joke />
+      <Joke question="What is a noun" punchline="A nounis a name of any person"/>
+      <Joke question="Who is the mother of Jesus ?" punchline="Mary Magdalene"/>
     </div>
   );
 }
