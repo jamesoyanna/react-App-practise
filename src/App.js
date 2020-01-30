@@ -11,17 +11,21 @@ import './App.css';
 function App() {
   return (
     <div className="contacts">
+      <ContactCards
+        name="Jagun Solomon"
+        imgUrl="https://bit.ly/2GAX1JY"
+        phone="08069254939"
+        email="engrjayt200@gmail.com"
+        alt="new"
+      />
+      <ContactCards
+        name="Kelvin Samba"
+        imgUrl="https://bit.ly/2GAX1JY"
+        phone="080456789220"
+        email="dotkelplus@gmail.com"
+      />
       <ContactCards />
-
-      <div className="contact-card">
-        <img
-          src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="new"
-        />
-        <h3>Mr. Kola Aina</h3>
-        <p>Phone: +2345020924</p>
-        <p>Email: dotkelpus@yahoo.com</p>
-      </div>
+      <ContactCards />
     </div>
   );
 }

@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+function ContactCards(props) {
 
-export class ContactCards extends Component {
-    render() {
+  console.log(props);
         return (
           <div>
             <div className="contact-card">
-              <img
-                src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="new"
-              />
-              <h3>Mr. James Oyanna</h3>
-              <p>Phone: 08069201492</p>
-              <p>Email: engrjayt200@gmail.com</p>
+              <img src={props.imgUrl} alt="new" style={{width: 400, height:200}} />
+              <h3>Name {props.name}</h3>
+              <p>Phone:{props.phone}</p>
+              <p>Email: {props.email}</p>
             </div>
           </div>
         );
     }
-}
+
 
 export default ContactCards;
