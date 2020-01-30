@@ -9,23 +9,27 @@ import ContactCards from "../src/components/ContactCards";
 import './App.css';
 
 function App() {
+  
   return (
     <div className="contacts">
       <ContactCards
-        name="Jagun Solomon"
-        imgUrl="https://bit.ly/2GAX1JY"
-        phone="08069254939"
-        email="engrjayt200@gmail.com"
-        alt="new"
+        contact={{
+          name: "Felica",
+          email: "met@gmail.com",
+          phone: "08069254939",
+          imgUrl: "https://bit.ly/2GAX1JY",
+          alt: "new"
+        }}
       />
       <ContactCards
-        name="Kelvin Samba"
-        imgUrl="https://bit.ly/2GAX1JY"
-        phone="080456789220"
-        email="dotkelplus@gmail.com"
+        contact={{
+          name: "Agatha Menda",
+          email: "agta@yahoo.com",
+          phone: "05969254939",
+          imgUrl: "https://bit.ly/2GAX1JY",
+          alt: "new"
+        }}
       />
-      <ContactCards />
-      <ContactCards />
     </div>
   );
 }
